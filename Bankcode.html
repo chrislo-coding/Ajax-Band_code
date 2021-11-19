@@ -1,0 +1,71 @@
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>
+            銀行代碼列表
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!--這邊是Ajax引入 這是javascript 開源外連的服務 到jQuery複製連結-->
+        <!--https://developers.google.com/speed/libraries#jquery-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </header>
+    <main>
+        <center>
+        銀行代碼<br>
+        API:https://raw.githubusercontent.com/wsmwason/taiwan-bank-code/master/data/taiwanBankCodeATM.json
+        <br><br>
+        <span>資料共有：</span>
+        <span id="data_num"></span>
+        <span>筆</span>
+        
+        <table border="1" class="table table-striped">
+                <tr>
+                    <td>ID</td>
+                    <td>Code</td>
+                    <td>BankName</td>
+                </tr>
+            <tbody id="form">
+                
+            </tbody>
+        </table>
+       
+        </center>
+    </main>
+    <section>
+    
+    </section>
+</html>
+<script>
+$(document).ready(function(){
+    $.ajax({
+            url:"https://raw.githubusercontent.com/wsmwason/taiwan-bank-code/master/data/taiwanBankCodeATM.json",
+            method:"get",
+            dataType:"json",
+            success: function (info) {
+                       info_length=info.length;
+                       
+                       $("#data_num").append(
+                           "<span>"+info_length+"</span>"
+                       )
+                       
+                       for (i=0; i<info.length;i++){
+                           $("#form").append(
+                               "<tr>"+
+                                   "<td>"+(i+1)+"</td>"+
+                                   "<td>"+info[i].code+"</td>"+
+                                   "<td>"+info[i].name+"</td>"+
+                               "</tr>"
+                            );
+                       };
+            },
+            error: function (data) {
+                        console.log("失敗");
+            }
+                        
+    });
+
+});           
+</script>
+
+
