@@ -28,8 +28,11 @@
 - Javascript
 <img src="./get_api.png" alt="cover" width="45%"> 
 
-### 利用console.log確認資料是否抓取成功，並且測試指定抓取前三筆資料。
+### console.log確認是否抓取成功
+- console.log請求成功
 <img src="./get_success.png" alt="Cover" width="50%"/>
+
+- console.log 顯示前三筆資料
 <img src="./get_top3.png" alt="Cover" width="70%"/>
 
 ## 將抓取的資料使用$(#"類別").append 寫入HTML表格
@@ -42,7 +45,6 @@
 - Spyder
 - Javasscript
 - HTML
-- CSS
 
 
 ## 專案開發人員
