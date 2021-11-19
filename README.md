@@ -15,6 +15,7 @@
 ### 目標API測試
 - 目標API，利用Postman測試API是否可以使用：
 <img src="./test_api.png" alt="cover" width="45%"> 
+
 ### 初步網頁架構
 - HTML架構 寫出表格
 <img src="./html.png" alt="cover" width="45%"> 
