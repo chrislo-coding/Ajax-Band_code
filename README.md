@@ -21,7 +21,6 @@
 
 ### 初步網頁架構
 - HTML架構 寫出表格
-- 
 <img src="./html.png" alt="cover" width="45%"> 
 
 ### Ajax請求抓取網頁
