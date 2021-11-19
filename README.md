@@ -14,15 +14,14 @@
 ## 過程截圖
 ### 目標API測試
 - 目標API，利用Postman測試API是否可以使用：
-<img src="./test_api.png" alt="cover" width="45%"> <img src="./target_2.png" alt="cover" width="45%" >
-
+<img src="./test_api.png" alt="cover" width="45%"> 
 ### 初步網頁架構
 - HTML架構 寫出表格
-<img src="./html.png" alt="cover" width="45%"> <img src="./target_2.png" alt="cover" width="45%" >
+<img src="./html.png" alt="cover" width="45%"> 
 
 ### Ajax請求抓取網頁
 - Javascript
-<img src="./get_api.png" alt="cover" width="45%"> <img src="./target_2.png" alt="cover" width="45%" >
+<img src="./get_api.png" alt="cover" width="45%"> 
 
 ### 利用console.log確認資料是否抓取成功，並且測試指定抓取前三筆資料。
 <img src="./get_success.png" alt="Cover" width="35%"/>
