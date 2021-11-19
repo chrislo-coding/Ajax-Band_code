@@ -2,7 +2,7 @@
 
 ## 使用語言
 
-- 語言:JavaScript/HTML/CSS
+- 語言:  JavaScript  /  HTML
 
 ## 主要功能
 
